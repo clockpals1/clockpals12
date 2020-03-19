@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "/Users/Desktop/projects/home"
+		},
+		{
+			"path": "/Users/Desktop/laptop-ui-master"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "feedu"
+	}
+}

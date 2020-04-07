@@ -136,81 +136,95 @@ nav {
 	position: absolute;
 	right: 20%;
 }
-form { 
-	border: 3px solid #f1f1f1; 
+form {
+	border: 3px solid #f1f1f1;
 	width: 80%;
 	align-items: center;
-	
-	
 
-} 
-/*assign full width inputs*/ 
-      
-input[type=text], 
-input[type=password] { 
-	width: 50%; 
-	padding: 15px 20px; 
-	margin: 12px 0; 
-	display: inline-block; 
-	border: 1px solid #ccc; 
-	box-sizing: border-box; 
+
+
+}
+/*assign full width inputs*/
+
+input[type=text],
+input[type=password] {
+	width: 50%;
+	padding: 15px 20px;
+	margin: 12px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
 	text-align: center;
 
-  	
-} 
- /*set a style for the buttons*/ 
-      
- button { 
-	background-color: #c36cbb; 
-	color: white; 
-	padding: 14px 20px; 
-	margin: 8px 0; 
-	border: none; 
-	cursor: pointer; 
-	width: 20%; 
-} 
- /*set extra style for the cancel button*/ 
-      
- .signupbtn { 
-	width: auto; 
-	padding: 10px 18px; 
-	background-color: #f44336; 
-	
-} 
- /*centre the display image inside the container*/ 
-      
- .imgcontainer { 
-	text-align: center; 
-	margin: 24px 0 12px 0; 
-} 
-/*set image properties*/ 
-  
-img.avatar { 
-	width: 40%; 
-	border-radius: 50%; 
-} 
-/*set padding to the container*/ 
-      
-.container { 
+
+
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ /*set a style for the buttons*/
+
+ button {
+	background-color: #c36cbb;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 20%;
+}
+ /*set extra style for the cancel button*/
+
+ .signupbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+
+}
+ /*centre the display image inside the container*/
+
+ .imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+/*set image properties*/
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+/*set padding to the container*/
+
+.container {
 	padding: 16px;
- 	
-	
-} 
-.container1 { 
+
+
+}
+.container1 {
 	padding: 18px;
 	margin-right: 20px;
 	  margin-left: 80px;
 	  text-align: center;
- 	
-	
-} 
 
-/*set the forgot password text*/ 
-  
-span.psw { 
-	float: right; 
-	padding-top: 16px; 
-} 
+		position: absolute;
+	 left: 50%;
+	 height: auto;
+	 -webkit-transform: translateX(-50%);
+	 -moz-transform: translateX(-50%);
+	 -ms-transform: translateX(-50%);
+	 -o-transform: translateX(-50%);
+	 transform: translateX(-50%);
+
+
+}
+
+/*set the forgot password text*/
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
 
 
 @keyframes drop {

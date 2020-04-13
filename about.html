@@ -10,6 +10,7 @@
 		/>
 		<link rel="stylesheet" href="./css/style.css" />
 		<title>FeedXtra | About us</title>
+
 	</head>
 	<body>
 		<header>
@@ -32,11 +33,18 @@
 			</div>
 		</header>
 		<main>
+			html{
+				scroll-behavior: smooth;
+			}
 			<h2 style="text-align: center"> About Feedxtra... </h2>
 
-					<button onclick="vision" title="Go to Vision & Mission"> Vision & Mission </button>
+					<button onclick="#vision" title="Go to Vision & Mission"> Vision & Mission </button>
 					<button onclick="location" title="Go to Delivery Locations"> Delivery Locations </button>
 					<button onclick="riders" title="Go to Riders"> Riders</butoon>
+
+				<div id="vision">
+					<p> We are a food delivery service, where we purchase the food the customer wants and deliver it to them within a given time.</p>
+				</div>
 
 			<img class="big-circle" src="./img/big-eclipse.svg" alt="" />
 			<img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />

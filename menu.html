@@ -9,12 +9,45 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/style.css" />
+
+		<style>
+
+			.card {
+			  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			  max-width: 300px;
+			  margin: 25px 50px 75px 100px;
+			  text-align: center;
+			  font-family: arial;
+			}
+
+			.price {
+			  color: grey;
+			  font-size: 22px;
+			}
+
+			.card button {
+			  border: none;
+			  outline: 0;
+			  padding: 12px;
+			  color: white;
+			  background-color: #c36cbb;
+			  text-align: center;
+			  cursor: pointer;
+			  width: 100%;
+			  font-size: 18px;
+			}
+
+			.card button:hover {
+			  opacity: 0.7;
+			}
+			</style>
 		<title>FeedXtra | Menu Dashboard</title>
 	</head>
 	<body>
 		<header>
 			<div class="logo-container">
-				<img src="./img/logo.svg" alt="logo" />
+				<a href="./index.html">
+				<img src="./img/logo.svg" alt="logo" /></a>
 				<h4 class="logo">FeedXtra</h4>
 			</div>
 			<nav>
@@ -23,16 +56,93 @@
 					<li><a class="nav-link" href="about.html">About us</a></li>
                     <li><a class="nav-link" href="menu.html">Menu</a></li>
                     <li><a class="nav-link" href="contact.html">Contact us</a></li>
-                    
-                 
+										<li><a class="nav-link" href="faq.html">FAQ</a></li>
+
+
 				</ul>
 			</nav>
 			<div class="cart">
 				<img src="./img/cart.svg" alt="cart" />
 			</div>
 		</header>
+		<main>
+			<h2 style="text-align:center">Order menu</h2>
+			<hr>
+			<br>
+			<table>
+				<tr>
+					<td> </td>
+					<td>
+					<div class="card">
+					<img src="./img/curry.jpg" alt="Curry goat" height="350" style="width:100%">
+					<h1>Curry goat</h1>
+					<p class="price">$519.99</p>
+					<p>Best reciepe for lunch.</p>
+					<p><button>Add to Cart</button></p>
+					</div>
 
-		
+
+
+					<td> <div class="card">
+					<img src="./img/water.jpg" alt="Water" height="350" style="width:100%">
+					<h1>one bottle of Water</h1>
+					<p class="price">$129.99</p>
+					<p>1 Litre.</p>
+					<p><button>Add to Cart</button></p>
+					</div>
+					</td>
+
+					<td> <div class="card">
+						<img src="./img/fries.jpg" alt="Fries"  height="350" style="width:100%" >
+						<h1>Fries and Chips</h1>
+						<p class="price">$649.99</p>
+						<p>Finger licking.</p>
+						<p><button>Add to Cart</button></p>
+						</div>
+						</td>
+				</tr>
+
+				<br>
+
+				<tr>
+					<td> </td>
+					<td>
+					<div class="card">
+					<img src="./img/chicken.jpeg" alt="Fried Chicken"  height="350"  style="width:100%">
+					<h1>Fried Chicken</h1>
+					<p class="price">$499.99</p>
+					<p>Lunch box.</p>
+					<p><button>Add to Cart</button></p>
+					</div>
+
+
+
+					<td> <div class="card">
+					<img src="./img/sandwich.jpg" alt="Sandwich" height="350" style="width:100%">
+					<h1>Sandwich</h1>
+					<p class="price">$719.99</p>
+					<p>Lunch. </p>
+					<p><button>Add to Cart</button></p>
+					</div>
+					</td>
+
+					<td> <div class="card">
+						<img src="./img/orange.jpg" alt="Orange juice" height="350" style="width:100%">
+						<h1>Orange juice</h1>
+						<p class="price">$190.99</p>
+						<p>1 litre Juice.</p>
+						<p><button>Add to Cart</button></p>
+						</div>
+						</td>
+				</tr>
+
+
+
+
+
+
+
+			</table>
 
 			<img class="big-circle" src="./img/big-eclipse.svg" alt="" />
 			<img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />

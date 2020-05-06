@@ -2,6 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	text-align: center;
 }
 
 body {
@@ -138,9 +139,9 @@ nav {
 }
 form {
 	border: 3px solid #f1f1f1;
-	width: 80%;
 	align-items: center;
-
+	margin: auto;
+	width: 50%;
 
 
 }

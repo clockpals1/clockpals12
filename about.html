@@ -93,6 +93,25 @@
 						button:active{
 							transform:matrix(15px);
 						}
+						#top{
+							display: none; /* Hidden by default */
+  						position: fixed; /* Fixed/sticky position */
+  						bottom: 20px; /* Place the button at the bottom of the page */
+  						right: 30px; /* Place the button 30px from the right */
+  						z-index: 99; /* Make sure it does not overlap */
+  						border: none; /* Remove borders */
+  						outline: none; /* Remove outline */
+  						background-color: red; /* Set a background color */
+  						color: white; /* Text color */
+  						cursor: pointer; /* Add a mouse pointer on hover */
+  						padding: 15px; /* Some padding */
+  						border-radius: 10px; /* Rounded corners */
+  						font-size: 18px; /* Increase font size */
+						}
+
+						#top:hover {
+  						background-color: #555; /* Add a dark-grey background on hover */
+						}
 					</style>
 
 			<h2 style="text-align: center"> About Feedxtra... </h2>
@@ -101,7 +120,7 @@
 		 <a href="#vision">	<button onclick="vision='#vision'" title="Go to Vision & Mission"> Vision & Mission </button></a>
 			<a href="#location"><button onclick="location='#location'" title="Go to Delivery Locations"> Delivery Locations </button></a>
 			<a href="#riders"><button onclick="riders='#riders'" title="Go to Riders"> Riders </button></a>
-			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<button onclick="topFunction()" id="top" title="Go to top">Top</button>
 						<br>
 
 					<p> We are a food delivery service, where we purchase the food the customer wants and deliver it to them within a given time.</p>
@@ -131,6 +150,29 @@
 					<p> Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
 					</p>
 				</div>
+
+				<script>
+					//Get the button:
+					mybutton = document.getElementById("myBtn");
+
+					// When the user scrolls down 20px from the top of the document, show the button
+					window.onscroll = function() {scrollFunction()};
+
+					function scrollFunction() {
+						if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+							mybutton.style.display = "block";
+						}
+						else {
+							mybutton.style.display = "none";
+						}
+					}
+
+					// When the user clicks on the button, scroll to the top of the document
+					function topFunction() {
+						document.body.scrollTop = 0; // For Safari
+						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+					}
+				</script>
 
 			<img class="big-circle" src="./img/big-eclipse.svg" alt="" />
 			<img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
